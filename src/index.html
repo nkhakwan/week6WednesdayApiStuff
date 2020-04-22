@@ -1,49 +1,19 @@
 <!DOCTYPE html>
 <html>
-
   <head>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> -->
-    <!-- <script type="text/javascript" src="bundle.js"></script> -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <title>TimedFlashCards</title>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="weather-interface.js"></script>
+    <title>Weather</title>
   </head>
-<body>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12"></div>
-        <div class="jumbotron">
-          <h1 class="myHeader"> take the quiz</h1>
-          <button class="btn btn-success" id="start-quiz">click here for the quiz</button
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="jumbotron">
-          <div class="text-center" id="timer">warningTimer</div>
-            <div id="question"></div>
-            <br>
-            <h4>Please enter your answer</h4>
-            <br>
-            <form id="uenter">
-            <div class="form-group">
-              <label for="answer"></label>
-              <input id="answer" type="text">
-            </div>
-            <div>
-            <button type="submit">Submit</button> 
-            </div> 
-          </form>
-          </div>
-        </div>
-      </div>
-    <div class="col-md-6">
-      <div class="jumbotron">
-        <h4>Your Results</h4>
-        <p id="hidden"><span id="result"></span></p>
-      </div>
+  <body>
+    <div class="container">
+      <h1>Get Weather Conditions From Anywhere!</h1>
+      <label for="location">Enter a location:</label>
+      <input id="location" type="text">
+      <button class="btn-success" id="weatherLocation">Get Current Temperature and Humidity</button>
+      <div class="errors"></div>
+      <div class="showHumidity"></div>
+      <div class="showTemp"></div>
     </div>
-  </div>
-  </div>
-</body>
+  </body>
 </html>
