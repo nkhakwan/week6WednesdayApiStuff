@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> -->
+    <!-- <script type="text/javascript" src="bundle.js"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>TimedFlashCards</title>
+  </head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12"></div>
+        <div class="jumbotron">
+          <h1 class="myHeader"> take the quiz</h1>
+          <button class="btn btn-success" id="start-quiz">click here for the quiz</button
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="jumbotron">
+          <div class="text-center" id="timer">warningTimer</div>
+            <div id="question"></div>
+            <br>
+            <h4>Please enter your answer</h4>
+            <br>
+            <form id="uenter">
+            <div class="form-group">
+              <label for="answer"></label>
+              <input id="answer" type="text">
+            </div>
+            <div>
+            <button type="submit">Submit</button> 
+            </div> 
+          </form>
+          </div>
+        </div>
+      </div>
+    <div class="col-md-6">
+      <div class="jumbotron">
+        <h4>Your Results</h4>
+        <p id="hidden"><span id="result"></span></p>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+</html>
