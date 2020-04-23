@@ -19,13 +19,15 @@ $(document).ready(function() {
           if (response.ok && response.status == 200) {
             jsonifiedResponse = await response.json();
             console.log(`logger is in correct response arena`);
+            console.log(jsonifiedResponse);
           } else {
             jsonifiedResponse = false;
             console.log(`logger is in false arena`);
             console.log(`logger asking for result and here it is ${jsonifiedResponse}`)
           }
           getElements(jsonifiedResponse);
-        } catch(error) {
+        } catch(err) {
+            console.log(`logger needs to know the error ${err.name}`);
           getElements(false);
         }
       }
