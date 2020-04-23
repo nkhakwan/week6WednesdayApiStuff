@@ -8,7 +8,7 @@ $(document).ready(function() {
     (async () => {
       let weatherService = new WeatherService();
       const response = await weatherService.getWeatherByCity(city);
-      console.log(`For the logger here is the response ${response}`);
+      console.log(`For the logger here is the response ${response.bikes[0].date_stolen}`);
       getElements(response);
     })();
 

@@ -1,8 +1,10 @@
 export class WeatherService {
   async getWeatherByCity(city) {
     try {
-      //let response = await fetch(`https://cors-anywhere.herokuapp.com/bikeindex.org/api/v3/search?stolenness=proximity&location=IP&distance=10`);
-      let response = await fetch(`https://bikeindex.org/api/v3/search?stolenness=proximity&location=IP&distance=10`);
+      console.log("logger has entered");
+      let response = await fetch(`https://cors-anywhere.herokuapp.com/bikeindex.org/api/v3/search?stolenness=proximity&location=IP&distance=10`);
+      //let response = await fetch(`https://bikeindex.org/api/v3/search?stolenness=proximity&location=IP&distance=10`);
+      console.log("logger after the fetch");
       let jsonifiedResponse;
       console.log(`logger needs ${response.ok} and ${response.status}`);
       if (response.ok && response.status == 200) {
