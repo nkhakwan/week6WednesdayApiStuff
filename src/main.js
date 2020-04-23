@@ -14,7 +14,7 @@ $(document).ready(function() {
   
       async function asyncApiCall() {
         try {
-          let response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=8f9c58064d1479fa6f4baa7bef6415fc`);
+          let response = await fetch(`http://dinoipsum.herokuapp.com/api/?format=json&paragraphs=2&words=5`);
           let jsonifiedResponse;
           if (response.ok && response.status == 200) {
             jsonifiedResponse = await response.json();
@@ -26,8 +26,7 @@ $(document).ready(function() {
             console.log(`logger asking for result and here it is ${jsonifiedResponse}`)
           }
           getElements(jsonifiedResponse);
-        } catch(err) {
-            console.log(`logger needs to know the error ${err.name}`);
+        } catch(error) {
           getElements(false);
         }
       }
@@ -43,6 +42,8 @@ $(document).ready(function() {
       }
     });
   });
+
+
 
 
 
