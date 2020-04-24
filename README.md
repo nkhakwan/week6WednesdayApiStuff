@@ -5,7 +5,7 @@
 #### By _**KhanSahab**_
 
 ## Description
-_This project basically would be sending ajax requests to get the api's from different sites and then using the data recieved in the local code. Tomorrow some specific project can also be chosen._
+_This project basically would be sending ajax requests to get the api's from different sites and then using the data recieved in the local code._
 
 
 ## Setup/Installation Requirements
@@ -14,9 +14,9 @@ _This project basically would be sending ajax requests to get the api's from dif
 * npm install _to install dependencies_
 * npm run start _to build it and have the website displayed_
 
-## Known Bugs
+## Word of Caution
 
-# Not complete. Would be completed tomorrow on Thursday.
+* This project was more of a practice on API's. three sites were successfully pinged and their information got thru API. Weather Servises, Binkes.index.org and Dinosaur site was successfully pinged. But for each practice there are different banck end files. If you bring up the website on this project you are going to get the weather services one but even that is hooked up with bike.index.org. So really it is not what the site has been prepared for but the actual practice that was done to get the knowledge.
 
 
 
@@ -40,7 +40,7 @@ API's
 
 ## Specs 
 
-Will input tomorrow once the project is finished.
+No Specific specs. This project was done merely to practice API's
 
 
 
